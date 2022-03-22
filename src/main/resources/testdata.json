@@ -1,0 +1,10 @@
+{
+  "checkCalculator" : [
+    {
+      "rowID":"TC001_SampleTest",
+      "description":"Sample Test",
+      "country": "Austria",
+      "vatRate": "5"
+    }
+  ]
+}
