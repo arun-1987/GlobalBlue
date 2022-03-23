@@ -4,7 +4,8 @@
       "rowID":"TC001_SampleTest",
       "description":"Sample Test",
       "country": "Austria",
-      "vatRate": "5"
+      "vatRate": "5",
+      "priceWithoutVat": "100"
     }
   ]
 }

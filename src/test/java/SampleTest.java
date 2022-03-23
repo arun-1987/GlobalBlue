@@ -16,6 +16,8 @@ public class SampleTest extends BaseTest {
         calculatorPage.launchApplication("https://www.calkoo.com/en/vat-calculator");
         calculatorPage.selectCountry(data.get("country").toString());
         calculatorPage.selectVATRate(data.get("vatRate").toString());
+        calculatorPage.setPriceWithoutVAT(data.get("priceWithoutVat").toString());
+        calculatorPage.verifyValueAddedAndPriceIncl();
         }
 
 
