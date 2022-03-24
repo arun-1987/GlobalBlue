@@ -15,6 +15,7 @@ public class CalculatorPage extends BasePage {
 
     public void launchApplication(String url){
         driver.get(url);
+        driver.manage().window().maximize();
         click(ACCEPTCOOKIES,"Accept cookies");
     }
 
