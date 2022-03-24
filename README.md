@@ -7,7 +7,7 @@ The project is developed to demonstrate test automation of calkoo vat calculator
 ### Aritifacts
 ```
 Test - SampleTest
-TestData - TestData
+TestData - testdata.json
 ```
 
 ### Usage
