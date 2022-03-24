@@ -11,14 +11,15 @@ TestData - testdata.json
 ```
 
 ### Usage
-To run in local
+```
+To run in local :
   mvn clean test -DsuiteXmlFile=TestSuite.xml
 
-To run in Github Actions
+To run in Github Actions :
   Go to Actions tab
   Under All workflow tabs select VAT calculator Test
   Click Run workflow
-
+```
 ### Tools Used
 ```
 TestNg - Test Runner
