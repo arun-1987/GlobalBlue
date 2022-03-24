@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VAT-Calculator-Validation">
+    <listeners>
+        <listener class-name="Report.TestListener"></listener>
+    </listeners>
+    <test name="VAT_Calculator_Validation">
+        <classes>
+            <class name="SampleTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
