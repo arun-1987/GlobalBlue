@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import java.time.Duration;
@@ -25,9 +26,12 @@ public class BasePage {
     }
 
     public void enter(By locator,String value){
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator)).sendKeys(value);
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element.clear();
+        element.sendKeys(value);
         Reporter.log("Entered "+value);
     }
+
 
     public void selectByVisibleText(By locator,String value){
        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -38,6 +42,14 @@ public class BasePage {
 
     public String getAttribute(By locator){
       return wait.until(ExpectedConditions.presenceOfElementLocated(locator)).getAttribute("value");
+    }
+
+    public void checkIfDisplayed(By locator){
+       try {
+           wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
+       }catch (Exception e){
+           Assert.assertTrue(false,"Test Failed in checkIfDisplayed" + e.getLocalizedMessage());
+       }
     }
 
 

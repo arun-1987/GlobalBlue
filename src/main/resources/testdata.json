@@ -1,11 +1,25 @@
 {
-  "checkCalculator" : [
+  "TC001_VerifyValueAddedTaxAndPriceIncl" : [
     {
-      "rowID":"TC001_SampleTest",
-      "description":"Sample Test",
+      "rowID":"TC001_VerifyValueAddedTaxAndPriceIncl",
+      "description":"Test to verify value added vat and price incl tax fields",
       "country": "Austria",
       "vatRate": "5",
-      "priceWithoutVat": "100"
+      "priceWithoutVat": "100",
+      "priceInclVat": "105",
+      "valueAddedTax": "5"
+    }
+  ],
+  "TC002_VerifyVATForTopTouristCountries" : [
+    {
+      "rowID":"TC002_VerifyVATForTopTouristCountries",
+      "description":"Test to verify vat % is displayed for the top 10 tourist destination",
+      "country": "France,Spain,Italy,Turkey,Mexico",
+      "France": "2.1,5.5,10,20",
+      "Spain": "4,10,21",
+      "Italy": "4,5,10,22",
+      "Turkey": "1,8,18",
+      "Mexico": "10,16"
     }
   ]
 }
