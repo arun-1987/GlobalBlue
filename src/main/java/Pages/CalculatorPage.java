@@ -31,16 +31,19 @@ public class CalculatorPage extends BasePage {
     }
 
     public void setPriceWithoutVAT(String userInput){
+        hardDelay();
         click(PRICEWITHOUTVAT_LABEL,"price without vat");
         enter(PRICEWITHOUTVAT,userInput);
     }
 
     public void setValueAddedTax(String userInput){
+        hardDelay();
         click(VALUEADDEDTAX_LABEL,"value added tax");
         enter(VALUEADDEDTAX,userInput);
     }
 
     public void setPriceInclVAT(String userInput){
+        hardDelay();
         click(PRICEINCLVAT_LABEL,"price incl vat");
         enter(PRICEINCLVAT,userInput);
     }

@@ -55,7 +55,7 @@ public class BasePage {
 
     public void hardDelay(){
        try{
-           Thread.sleep(5000);
+           Thread.sleep(1000);
        }catch (Exception e){
 
        }
